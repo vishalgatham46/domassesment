@@ -8,18 +8,18 @@ circle.style.position="absolute";
 
 var a;
 function animation_func(){
-    var pos = 0;  
+    var pos = 0; 
     clearInterval(a);  
     a = setInterval(frame, 2); 
     function frame() {  
-    if (pos == 600) {  
+    if (pos==600) {  
         clearInterval(a);  
         box_anime();
     }
-    else
-    {  
-        pos++;   
-        circle.style.top = pos + 'px';   
+    else{  
+        pos++;
+        pos++; 
+        circle.style.top = pos + 'px';
         circle.style.left = pos + 'px'; 
       }  
     }  
@@ -51,7 +51,7 @@ function box_anime2()
     clearInterval(a);  
     a = setInterval(frame, 2);  
     function frame() {  
-    if (tpos == 600 && lpos==0) {  
+    if (tpos == 600) {  
         circle.style.borderRadius="30px";
         clearInterval(a); 
         box_anime3(); 
